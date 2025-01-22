@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'LH',
     'blogs',
-    'placements'
+    'placements',
+    'events'
 ]
 
 MIDDLEWARE = [

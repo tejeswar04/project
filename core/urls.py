@@ -21,10 +21,12 @@ from django.conf.urls.static import static
 from LH.views import *
 from blogs.views import *
 from placements.views import *
+from events.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', landing, name="landing"),
     path('home/', home, name="home"),
     path('blogs/',view_blogs,name="view_blogs"),
-    path('placements/',view_main_placements,name="view_placements")
+    path('placements/',view_main_placements,name="view_placements"),
+    path('events/',view_events,name="view_events")
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

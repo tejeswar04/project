@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'LH',
     'blogs',
     'placements',
-    'events'
+    'events',
+    'univ'
 ]
 
 MIDDLEWARE = [
